@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ordenando una pizza</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/pizza.css" />
+</head>
+<body>
+<header id="box">
+<h1 id="flashlight">
+<span id="flash">ORDEN DE</span>
+<span id="light">Pollo</span>
+</h1>
+</header>
+<form action="javascript:void(0);" class="demoForm" id="pizzaForm">
+<fieldset>
+<legend>Menú</legend>
+<p>COMBOS:
+<label><input type="radio" name="size" value="7.25" checked="checked"
+/>Super Combo</label>
+<label><input type="radio" name="size" value="5.75" />Personal</label>
+<label><input type="radio" name="size" value="3.50" />Infantil</label>
+<input type="hidden" name="sz_tot" value="0.00" />
+</p>
+<p id="pizza_toppings"><label>Ingredientes:</label>
+<label><input type="checkbox" name="Ensalada" value="1.50" />Ensalada</label>
+<label><input type="checkbox" name="papas" value="1.25" />Papas fritas</label>
+<label><input type="checkbox" name="pollog" value="1.75" />Pieza de pollo grande</label>
+<label><input type="checkbox" name="pollom" value="1.50" />Pieza de pollo mediana</label>
+<label><input type="checkbox" name="pollop" value="1.25" />Pieza de pollo pequeña</label>
+<label><input type="checkbox" name="bebidag" value="1.50" />Bebida Grande</label>
+<label><input type="checkbox" name="bebidam" value="1.25" />Bebida mediana</label>
+<label><input type="checkbox" name="bebidap" value="1.00" />Bebida pequeña</label>
+<label><input type="checkbox" name="cafe" value="0.50" />Café</label>
+<label><input type="checkbox" name="postre" value="1.25" />Postre</label>
+<input type="hidden" name="tops_tot" value="0.00" />
+</p>
+<p>
+<label>
+Total: $<input type="text" name="total" class="num" value="0.00"
+readonly="readonly" />
+</label>
+</p>
+<p>
+<input type="submit" name="submit" value="Submit" />
+</p>
+</fieldset>
+</form>
+<script src="js/pizza.js"></script>
+</body>
+</html>
