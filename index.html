@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,19 +15,23 @@
 	</h1>	
 </header>
 <form action="javascript:void(0);" class="demoForm" id="pizzaForm">
-<fieldset>
-	<legend>COMBOS</legend>
-	<p>
-		<label><input type="radio" name="size" value="7.25" checked="checked"
-		/>Super Combo</label>
-		<label><input type="radio" name="size" value="5.75" />Personal</label>
-		<label><input type="radio" name="size" value="3.50" />Infantil</label>
-		<input type="hidden" name="sz_tot" value="0.00" />
-	</p>
+	<fieldset>
+		<legend>COMBOS</legend>
+		<p>
+			<label><input type="radio" name="size" value="7.25" checked="checked"
+			/>Super Combo</label>
+			<label><input type="radio" name="size" value="5.75" />Personal</label>
+			<label><input type="radio" name="size" value="3.50" />Infantil</label>
+			<input type="hidden" name="sz_tot" value="0.00" />
+		</p>
 	</fieldset>
 	<fieldset>
+		<label id="pizza_toppings">
+			
+
+		
 		<legend>
-			<label>Ingredientes:</label>
+			<label >Ingredientes:</label>
 		</legend>
 		
 		<div>
@@ -45,6 +52,7 @@
 			<label><input type="checkbox" name="postre" value="1.25" />Postre</label>
 			<input type="hidden" name="tops_tot" value="0.00" />
 		</div>
+		</label>
 		<p>
 			<label>
 			Total: $<input type="text" name="total" class="num" value="0.00"
@@ -56,7 +64,7 @@
 		</p>
 
 	</p>
-	</fieldset>
+		</fieldset>
 	
 
 </form>
