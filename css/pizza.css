@@ -1,54 +1,15 @@
 /* Estilos para el formulario de orden de pizza */
 body {
     font: 16px/1.4 Tahoma,Helvetica,Kalimati,Sans-serif;
+    margin: 0;
+
 }
 
-/* box ------------------------------------------------------ */
-#box {
-  background: hsl(210, 30%, 0%) radial-gradient( hsl(210, 30%, 20%), hsl(210, 30%, 0%));
-  font-weight: bold;
-  min-width: 500px;
-  padding: 20px auto;
+#box{
   text-align: center;
-  -webkit-backface-visibility: hidden; /* fixes flashing */
 }
-
-
-/* flashlight ------------------------------------------------------ */
-#flashlight {
-    color: hsla(0,0%,0%,0);
-    font-size: 3em;
-    perspective: 80px;
-    outline: none;
-}
-
-
-/* flash ------------------------------------------------------ */
-#flash {
-  display: inline-block;
-  text-shadow: #bbb 0 0 1px, 
-               #fff 0 -1px 2px, 
-               #fff 0 -3px 2px, 
-               rgba(0,0,0,0.8) 0 30px 25px;
-  transition: margin-left 0.3s cubic-bezier(0, 1, 0, 1);
-}
-    
-#box:hover #flash {
-  margin-left: 20px;
-  transition: margin-left 1s cubic-bezier(0, 0.75, 0, 1);
-}
-
-
-/* light ------------------------------------------------------ */
-#light {
-  display: inline-block;
-  text-shadow: #111 0 0 1px, rgba(255,255,255,0.1) 0 1px 3px;
-}
-
-#box:hover #light {
-  text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
-  transform: rotateY(-60deg);
-  transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
+#box h1{
+  color: #056053;
 }
 
 ul {
@@ -71,6 +32,7 @@ form.demoForm p {
 }
 form.demoForm legend {
     margin-left:6px;
+    color: #00a3c7;
 }
 
 form.demoForm label {
@@ -88,5 +50,9 @@ form.demoForm input.num {
 
 /* for ie8+ (wraps tightly) */
 form.demoForm input[type=submit] {
-    padding:1px 4px;
+    padding: 2px 7px;
+    background: #d2c335;
+    color: #FFF;
+    border: 2px solid #d2c335;
+    font-size: larger;
 }
